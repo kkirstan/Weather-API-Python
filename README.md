@@ -26,9 +26,7 @@ Southern Hemisphere - Cloudiness (%) vs. Latitude
 Northern Hemisphere - Wind Speed (mph) vs. Latitude
 Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-After each pair of plots, take the time to explain what the linear regression is modeling. For example, describe any relationships you notice and any other analysis you may have.
-Your final notebook must:
-
+Final notebook should:
 Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
 Perform a weather check on each of the cities using a series of successive API calls.
 Include a print log of each city as it's being processed with the city number and city name.
@@ -36,30 +34,29 @@ Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
 # Part 2 - VacationPy
 
-Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
+For this section, I used weather data collected from the previous step to plan future vacations. I also used jupyter-gmaps and the Google Places API for this part of the assignment.
 
-To complete this part of the assignment,you will need to do the following:
 
 Create a heat map that displays the humidity for every city from Part I.
 
-Narrow down the DataFrame to find your ideal weather condition. For example:
+Narrow down the DataFrame to find your ideal weather conditions. Mine were:
 
 
-A max temperature lower than 80 degrees but higher than 70.
+A max temperature lower than 85 degrees but higher than 75.
 
 
-Wind speed less than 10 mph.
+Wind speed less than 8 mph.
 
 
 Zero cloudiness.
 
 
-Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
+Drop any rows that don't contain all three conditions.
 
-Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
+Use Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
 
 Plot the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country.
 
 
-For Part I, you must include a written description of three observable trends based on the data.
-For Part II, you must include a screenshot of the heatmap you create and include it in your submission.
+For Part I, I included a written description of three observable trends based on the data in the beginning of my main code, WeatherPy.ipynb.
+For Part II, I included a screenshot of the heatmap I created in the VacationPy folder ("hotel_heatmap.png").
